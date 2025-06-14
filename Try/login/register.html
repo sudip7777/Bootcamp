@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Techspire Sports Club</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="register-container">
+        <div class="register-box">
+            <div class="logo">
+                <img src="../images/techspire.png" alt="Techspire Sports Club">
+            </div>
+            <h2>Join Techspire Sports Club</h2>
+            <p class="tagline">Fill in the details to create an account</p>
+            <form action="index.html" method="POST" onsubmit="return validateRegistration()">
+                <div class="input-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">CPS Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@cps.edu.np" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+            <p class="login">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script>
+        function validateRegistration() {
+            var email = document.getElementById("email").value;
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@cps\.edu\.np$/;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+
+            if (!emailPattern.test(email)) {
+                alert("Please use a valid CPS email (example@cps.edu.np).");
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

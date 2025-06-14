@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Club - Techspire Sports Club</title>
+    <link rel="stylesheet" href="join.css">
+    <script src="join.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Techspire Sports Club</h1>
+        <p>Unleash Your Potential, Join Today!</p>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html" class="active">Home</a></li>
+                <li><a href="../home/story.html">Our Story</a></li>
+                <li><a href="../home/sportshub.html">Sports Hub</a></li>
+                <li><a href="../home/events.html">Upcoming Events</a></li>
+                <li><a href="../home/touch.html">Get in Touch</a></li>
+                <li><a href="../home/about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>Become a Member</h2>
+        <p>Join Techspire Sports Club and take your game to the next level!</p>
+    </section>
+
+    <!-- MEMBERSHIP REGISTRATION FORM -->
+    <section class="membership-form">
+        <h2>Register Now</h2>
+        <p>Fill in your details to become a part of Techspire Sports Club.</p>
+
+        <form id="joinForm">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="sport">Preferred Sport</label>
+            <select id="sport" name="sport" required>
+                <option value="" disabled selected>Select a sport</option>
+                <option value="football">⚽ Football</option>
+                <option value="basketball">🏀 Basketball</option>
+                <option value="swimming">🏊 Swimming</option>
+                <option value="tennis">🎾 Tennis</option>
+            </select>
+
+            <label for="experience">Sports Experience</label>
+            <textarea id="experience" name="experience" rows="4" placeholder="Describe your sports experience (optional)"></textarea>
+
+            <button type="submit" class="btn">Join Now</button>
+        </form>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+        <h2>Join the Best!</h2>
+        <p>Experience elite training, thrilling matches, and an amazing sports community.</p>
+        <a href="touch.html" class="btn">Get in Touch</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Techspire Sports Club. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

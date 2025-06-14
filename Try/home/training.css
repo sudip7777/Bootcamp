@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background: url("../images/training-banner.webp") no-repeat center center/cover;
+    color: #FFD700; /* Changed to Gold for better contrast */
+    padding: 100px 20px;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added shadow for better visibility */
+}
+
+
+/* Training Section */
+.training-container {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.training-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #003366;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #003366;
+    color: white;
+    padding: 50px;
+}
+
+.cta a.btn {
+    background-color: white;
+    color: #003366;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta a.btn:hover {
+    background-color: #00509e;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

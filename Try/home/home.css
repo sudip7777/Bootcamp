@@ -1,0 +1,163 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+/* HEADER */
+header {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #f4f4f4;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #d1d1d1;
+}
+
+/* NAVIGATION BAR */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Blinking hover effect */
+nav ul li a:hover {
+    animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% { color: #ff9800; }
+    50% { color: #ff5722; }
+    100% { color: #ff9800; }
+}
+
+/* Active Page */
+nav ul li .active {
+    background: #ff9800;
+    border-radius: 5px;
+    padding: 8px 12px;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url("../images/sports-bg.jpg") no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+}
+
+/* SPORTS OVERVIEW */
+.sports-overview {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+}
+
+.sports-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sport {
+    width: 250px;
+    background: #2a5298;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sport:hover {
+    transform: scale(1.1);
+}
+
+.sport img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sport h3 {
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* LATEST NEWS */
+.latest-news {
+    text-align: center;
+    padding: 50px;
+    background: #ff9800;
+}
+
+.latest-news h2 {
+    font-size: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}

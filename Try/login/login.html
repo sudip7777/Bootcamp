@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login | Techspire Sports Club</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="../images/techspire.png" alt="Techspire Sports Club">
+            </div>
+            <h2>Welcome to Techspire Sports Club</h2>
+            <p class="tagline">Log in with your CPS email to continue</p>
+            <form onsubmit="return validateForm()">
+                <div class="input-group">
+                    <label for="email">CPS Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@cps.edu.np" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p class="register">Not registered? <a href="register.html">Create an account</a></p>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@cps\.edu\.np$/; // Allows only CPS emails
+            if (!emailPattern.test(email)) {
+                alert("Please use your CPS email (example@cps.edu.np).");
+                return false;
+            }
+            // Redirect to home.html upon successful validation
+            window.location.href = "../home/home.html";
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html>
